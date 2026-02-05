@@ -1,8 +1,30 @@
 package org.example.model;
 
 public class Lamp {
-    private LampType lampType;
+    private LampType style;
     private boolean battery;
     private int globRating;
 
+    public Lamp(LampType style, boolean battery, int globRating) {
+        this.style = style;
+        this.battery = battery;
+        this.globRating = globRating;
+    }
+
+    public void turnOn(){
+        System.out.println("Lamp is being turned on");
+    }
+
+    public void getStyle(){
+        LampType style = this.style;
+    }
+
+    public void getGlobaRating(){
+        LampType style = this.style;
+    }
+
+    @Override
+    public String toString(){
+        return style.toString() + " " + battery + " " + globRating;
+    }
 }
