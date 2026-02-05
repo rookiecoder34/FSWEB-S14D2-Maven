@@ -23,8 +23,5 @@ public class Lamp {
         LampType style = this.style;
     }
 
-    @Override
-    public String toString(){
-        return style.toString() + " " + battery + " " + globRating;
-    }
+
 }
